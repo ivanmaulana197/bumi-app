@@ -9,7 +9,7 @@ class DetailContentPage extends StatefulWidget {
 }
 
 class _DetailContentPageState extends State<DetailContentPage> {
-  var _urlimage = "http://bumi-indo.herokuapp.com/foto/content/";
+  
   Future getDetailContent;
   @override
   void initState() {
@@ -83,7 +83,7 @@ class _DetailContentPageState extends State<DetailContentPage> {
           ),
           child: Center(
               child: Image.network(
-            _urlimage + gambar,
+            gambar,
             width: 300,
           )),
         ),
