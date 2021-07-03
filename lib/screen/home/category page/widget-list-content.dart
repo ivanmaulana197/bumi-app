@@ -17,7 +17,7 @@ class WidgetListContent extends StatefulWidget {
 }
 
 class _WidgetListContentState extends State<WidgetListContent> {
-  var _urlimage = "http://bumi-indo.herokuapp.com/foto/content/";
+
   Color getColor() {
     if (widget.category == 'Lomba') {
       return Colors.yellow[800];
@@ -66,7 +66,7 @@ class _WidgetListContentState extends State<WidgetListContent> {
                 height: 200,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage(_urlimage + widget.gambar),
+                      image: NetworkImage(widget.gambar),
                       fit: BoxFit.cover,
                     ),
                     borderRadius: BorderRadius.circular(20)),
